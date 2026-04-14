@@ -26,9 +26,9 @@
     
     <repositories>
         <repository>
-            <id>aliyun</id>
-            <name>Aliyun Repository</name>
-            <url>https://maven.aliyun.com/repository/public</url>
+            <id>tsinghua</id>
+            <name>Tsinghua Maven Repository</name>
+            <url>https://maven.tsinghua.edu.cn/repository/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -40,9 +40,9 @@
     
     <pluginRepositories>
         <pluginRepository>
-            <id>aliyun-plugin</id>
-            <name>Aliyun Plugin Repository</name>
-            <url>https://maven.aliyun.com/repository/public</url>
+            <id>tsinghua-plugin</id>
+            <name>Tsinghua Plugin Repository</name>
+            <url>https://maven.tsinghua.edu.cn/repository/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>

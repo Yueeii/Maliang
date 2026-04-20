@@ -24,6 +24,34 @@
         <maven.test.skip>true</maven.test.skip>
     </properties>
     
+    <repositories>
+        <repository>
+            <id>tsinghua</id>
+            <name>Tsinghua Maven Repository</name>
+            <url>https://maven.tsinghua.edu.cn/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <pluginRepositories>
+        <pluginRepository>
+            <id>tsinghua-plugin</id>
+            <name>Tsinghua Plugin Repository</name>
+            <url>https://maven.tsinghua.edu.cn/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    
     <dependencies>
         <!-- Google Gen AI Java SDK (Gemini 官方 SDK) -->
         <dependency>
@@ -286,13 +314,6 @@
             <version>${langchain4j.version}</version>
         </dependency>
         
-        <!-- LangChain4j 本地嵌入模型 -->
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-embeddings</artifactId>
-            <version>${langchain4j.version}</version>
-        </dependency>
-        
         <!-- AllMiniLmL6V2 嵌入模型 -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
@@ -351,12 +372,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
-        </dependency>
-        
-        <!-- Caffeine 缓存 -->
-        <dependency>
-            <groupId>com.github.ben-manes.caffeine</groupId>
-            <artifactId>caffeine</artifactId>
         </dependency>
         
         <!-- Spring Caffeine Cache -->
